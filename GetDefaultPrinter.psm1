@@ -1,3 +1,4 @@
+# Вывод в консоль имени принтера по умолчанию
 function Get-DefaultPrinter { 
   [CmdletBinding()]
 param (
@@ -16,3 +17,5 @@ param (
     Write-Verbose "Операция завершена"
   } #END
 }
+
+Export-ModuleMember -Function Get-DefaultPrinter
